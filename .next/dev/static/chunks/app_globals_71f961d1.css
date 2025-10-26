@@ -1,6 +1,6 @@
 /* [project]/app/globals.css [app-client] (css) */
 :root {
-  --background: #023a0f;
+  --background: #4d8a5b;
   --foreground: #ecf1ee;
   --accent: #7fd08a;
   --muted: #ecf1eed9;
@@ -41,8 +41,8 @@ body {
 .site-logo {
   object-fit: contain;
   border-radius: 8px;
-  width: 56px;
-  height: 56px;
+  width: 200px;
+  height: auto;
 }
 
 .site-title {
@@ -77,7 +77,6 @@ body {
 
 .hero {
   flex: auto;
-  justify-content: center;
   align-items: center;
   width: 100%;
   display: flex;

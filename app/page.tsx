@@ -2,18 +2,9 @@ import "../app/globals.css";
 
 export default function Home() {
   return (
-    <>
+    <html>
       <header className="site-header">
-        <div className="header-left">
-          <img
-            src="/logo.png"
-            alt="Logo LGraziadei"
-            width={64}
-            height={64}
-            className="site-logo"
-          />
-          <h1 className="site-title">LGraziadei</h1>
-        </div>
+        <img src="/logo.svg" alt="Logo LGraziadei" className="site-logo" />
 
         <nav className="header-right" aria-label="Menu principal">
           <a
@@ -43,7 +34,7 @@ export default function Home() {
         </nav>
       </header>
 
-      <main className="hero" role="main">
+      <body className="hero" role="main">
         <div className="hero-content">
           <h2>Bem-vindo à minha landing page!</h2>
           <p>Esta é uma página mínima usando Next.js.</p>
@@ -55,7 +46,7 @@ export default function Home() {
             className="hero-image"
           />
         </div>
-      </main>
-    </>
+      </body>
+    </html>
   );
 }
