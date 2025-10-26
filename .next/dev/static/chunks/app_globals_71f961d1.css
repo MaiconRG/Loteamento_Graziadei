@@ -1,0 +1,145 @@
+/* [project]/app/globals.css [app-client] (css) */
+:root {
+  --background: #023a0f;
+  --foreground: #ecf1ee;
+  --accent: #7fd08a;
+  --muted: #ecf1eed9;
+  --max-width: 1100px;
+  --gap: 1rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  display: flex;
+}
+
+.site-header {
+  width: 100%;
+  max-width: var(--max-width);
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+  margin: 0 auto;
+  padding: .75rem 1rem;
+  display: flex;
+}
+
+.header-left {
+  align-items: center;
+  gap: .75rem;
+  display: flex;
+}
+
+.site-logo {
+  object-fit: contain;
+  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+}
+
+.site-title {
+  color: var(--foreground);
+  letter-spacing: .6px;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.header-right {
+  align-items: center;
+  gap: .75rem;
+  display: flex;
+}
+
+.nav-link {
+  color: var(--muted);
+  background: none;
+  border-radius: 999px;
+  padding: .45rem .9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .16s, color .16s;
+  display: inline-block;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--foreground);
+  background: #ffffff0f;
+  outline: none;
+}
+
+.hero {
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: var(--max-width);
+  padding: 2rem 1rem;
+}
+
+.hero-content h2 {
+  margin: 0 0 .5rem;
+  font-size: 2rem;
+}
+
+.hero-content p {
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+}
+
+.hero-image {
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 6px 24px #00000073;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    padding: .5rem .75rem;
+  }
+
+  .site-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .site-title {
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    padding: .35rem .6rem;
+    font-size: .95rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-right {
+    gap: .5rem;
+  }
+
+  .nav-link {
+    padding: .3rem .5rem;
+    font-size: .9rem;
+  }
+}
+
+/*# sourceMappingURL=app_globals_71f961d1.css.map*/
