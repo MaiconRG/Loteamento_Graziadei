@@ -467,6 +467,117 @@ body {
   }
 }
 
+/* Menu Flutuante */
+.floating-menu {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.floating-menu-toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.floating-menu-toggle:hover {
+  background-color: var(--background);
+}
+
+.floating-menu .menu-icon {
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.floating-menu .menu-icon::before,
+.floating-menu .menu-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+  left: 0;
+}
+
+.floating-menu .menu-icon::before {
+  top: -6px;
+}
+
+.floating-menu .menu-icon::after {
+  bottom: -6px;
+}
+
+.floating-menu-toggle[aria-expanded="true"] .menu-icon {
+  background-color: transparent;
+}
+
+.floating-menu-toggle[aria-expanded="true"] .menu-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.floating-menu-toggle[aria-expanded="true"] .menu-icon::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.floating-menu-nav {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background-color: white;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.floating-menu-nav.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.floating-menu-nav .nav-link {
+  white-space: nowrap;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+}
+
+.floating-menu-nav .nav-link:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
 /* Ajuste de orientação para dispositivos móveis */
 @media (max-width: 480px) and (orientation: landscape) {
   .site-header {
@@ -477,5 +588,19 @@ body {
   .header-right {
     width: auto;
     padding: 0;
+  }
+
+  .floating-menu {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .floating-menu-toggle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .floating-menu-nav {
+    bottom: 60px;
   }
 }

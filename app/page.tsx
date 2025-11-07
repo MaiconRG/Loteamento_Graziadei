@@ -1,10 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../app/globals.css";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showFloatingMenu, setShowFloatingMenu] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector(".site-header");
+      if (header) {
+        const headerBottom = header.getBoundingClientRect().bottom;
+        setShowFloatingMenu(headerBottom < 0);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -12,6 +26,53 @@ export default function Home() {
 
   return (
     <main>
+      {/* Menu Flutuante */}
+      <div className={`floating-menu ${showFloatingMenu ? 'show' : ''}`}>
+        <button
+          className="floating-menu-toggle"
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
+          aria-label="Menu flutuante"
+        >
+          <span className="menu-icon"></span>
+        </button>
+        <nav className={`floating-menu-nav ${isMenuOpen ? 'is-open' : ''}`}>
+          <a
+            className="nav-link"
+            href="#terrenos"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('terrenos')?.scrollIntoView({ behavior: 'smooth' });
+              setIsMenuOpen(false);
+            }}
+          >
+            Terrenos
+          </a>
+          <a
+            className="nav-link"
+            href="#contato"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' });
+              setIsMenuOpen(false);
+            }}
+          >
+            Contato
+          </a>
+          <a
+            className="nav-link"
+            href="#sobre"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' });
+              setIsMenuOpen(false);
+            }}
+          >
+            Sobre
+          </a>
+        </nav>
+      </div>
+
       <header className="site-header">
         <div className="logo">
           <img src="/logo.svg" alt="Logo LGraziadei" className="site-logo" />
