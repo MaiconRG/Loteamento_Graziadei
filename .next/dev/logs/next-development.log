@@ -1,8 +1,433 @@
-[00:00:01.839] Server  LOG      ✓ Ready in 1378ms
-[00:00:05.969] Server  WARN     ⚠ Cross origin request detected from 192.168.1.7 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:06.012] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:40.336] Server  LOG      ✓ Compiled in 9ms
-[00:01:47.936] Server  LOG      ✓ Compiled in 5ms
-[00:01:54.538] Server  LOG      ✓ Compiled in 7ms
-[00:02:20.100] Server  LOG      ✓ Compiled in 10ms
+[00:00:01.031] Server  LOG      ✓ Ready in 735ms
+[00:00:05.707] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:30.214] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:39.835] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:45.193] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:22.786] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:43.396] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:50.692] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:53.414] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:20.828] Server  LOG      ✓ Compiled in 6ms
+[00:05:53.519] Server  LOG      ✓ Compiled in 9ms
+[00:06:43.302] Server  LOG      ✓ Compiled in 11ms
+[00:08:57.190] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:57.684] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:11.362] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:11.510] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:05.983] Server  LOG      ✓ Compiled in 7ms
+[00:10:23.852] Server  LOG      ✓ Compiled in 10ms
+[00:11:50.010] Server  LOG      ✓ Compiled in 10ms
+[00:11:51.056] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:07.916] Server  LOG      ✓ Compiled in 3ms
+[00:12:17.009] Server  LOG      ✓ Compiled in 10ms
+[00:13:27.368] Server  LOG      ✓ Compiled in 12ms
+[00:13:56.406] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:31.458] Server  LOG      ✓ Compiled in 4ms
+[00:17:13.963] Server  LOG      ✓ Compiled in 12ms
+[00:18:42.325] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | 'use client';
+    | ^^^^^^^^^^^^^
+  4 | import { useState } from 'react';
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:18:42.325] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | 'use client';
+> 4 | import { useState } from 'react';
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:18:55.027] Server  LOG      ✓ Compiled in 13ms
+[00:18:55.132] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | 'use client';
+    | ^^^^^^^^^^^^^
+  4 | import { useState } from 'react';
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:18:55.132] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | 'use client';
+> 4 | import { useState } from 'react';
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:19:10.356] Server  LOG      ✓ Compiled in 23ms
+[00:19:10.458] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | 'use client';
+    | ^^^^^^^^^^^^^
+  4 | import { useState } from 'react';
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:19:10.458] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | 'use client';
+> 4 | import { useState } from 'react';
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:19:33.704] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | 'use client';
+    | ^^^^^^^^^^^^^
+  4 | import { useState } from 'react';
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:19:33.704] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | 'use client';
+> 4 | import { useState } from 'react';
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:22:05.799] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:22:05.799] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | ("use client");
+> 4 | import { useState } from "react";
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:22:08.845] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:22:08.845] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | ("use client");
+> 4 | import { useState } from "react";
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:22:23.938] Server  ERROR    ⨯ ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+
+./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | ("use client");
+> 4 | import { useState } from "react";
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:22:24.071] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:22:24.071] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | ("use client");
+> 4 | import { useState } from "react";
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:22:24.918] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:22:24.918] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | ("use client");
+> 4 | import { useState } from "react";
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:22:25.041] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:22:25.041] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | ("use client");
+> 4 | import { useState } from "react";
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:22:25.586] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:22:25.586] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | ("use client");
+> 4 | import { useState } from "react";
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:22:26.206] Browser ERROR   uncaughtError: Error: ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+[00:22:26.662] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:22:26.662] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | ("use client");
+> 4 | import { useState } from "react";
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:22:26.776] Browser ERROR   ./app/page.tsx:3:1
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | ("use client");
+    | ^^^^^^^^^^^^^^^
+  4 | import { useState } from "react";
+  5 |
+  6 | export default function Home() {
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+[00:22:26.776] Browser ERROR   ./app/page.tsx:4:10
+Ecmascript file had an error
+  2 |
+  3 | ("use client");
+> 4 | import { useState } from "react";
+    |          ^^^^^^^^
+  5 |
+  6 | export default function Home() {
+  7 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:23:15.057] Browser ERROR   ./app/page.tsx:3:10
+Ecmascript file had an error
+  1 | import "../app/globals.css";
+  2 |
+> 3 | import { useState } from "react";
+    |          ^^^^^^^^
+  4 |
+  5 | export default function Home() {
+  6 |   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:24:16.851] Server  LOG      ✓ Compiled in 125ms
+[00:24:18.075] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:26.746] Server  LOG      ✓ Compiled in 15ms
+[00:24:26.902] Browser ERROR   ./app/page.tsx:70:5
+Parsing ecmascript source code failed
+  68 |         <div className="body_description"></div>
+  69 |       </body>
+> 70 |     </html>
+     |     ^
+  71 |   );
+  72 | }
+  73 |
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:24:26.902] Browser ERROR   ./app/page.tsx:70:6
+Parsing ecmascript source code failed
+  68 |         <div className="body_description"></div>
+  69 |       </body>
+> 70 |     </html>
+     |      ^^^^^^
+  71 |   );
+  72 | }
+  73 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:24:38.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:40.391] Server  LOG      ✓ Compiled in 12ms
+[00:29:15.925] Server  LOG      ✓ Compiled in 12ms
+[00:32:06.864] Server  LOG      ✓ Compiled in 12ms
+[00:33:06.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:33:13.340] Server  LOG      ✓ Compiled in 7ms
+[00:35:27.004] Server  LOG      ✓ Compiled in 14ms
+[00:36:10.514] Server  LOG      ✓ Compiled in 17ms
+[00:36:22.508] Server  LOG      ✓ Compiled in 10ms
+[00:38:33.491] Server  LOG      ✓ Compiled in 7ms
+[00:38:55.703] Server  LOG      ✓ Compiled in 5ms
+[00:38:59.931] Server  LOG      ✓ Compiled in 6ms
+[00:39:03.585] Server  LOG      ✓ Compiled in 11ms
+[00:39:06.480] Server  LOG      ✓ Compiled in 7ms
+[00:39:09.834] Server  LOG      ✓ Compiled in 4ms
+[00:39:40.364] Server  LOG      ✓ Compiled in 10ms
+[00:40:40.550] Server  LOG      ✓ Compiled in 11ms
