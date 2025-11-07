@@ -122,7 +122,89 @@ export default function Home() {
       </div>
 
       <div className="body_chat">
-        <div className="home_form"></div>
+        <div className="home_form">
+          <h2 className="form_title">Solicite mais informações</h2>
+          <div className="form_columns">
+            <div className="form_field">
+              <label htmlFor="name">
+                Nome Completo <span className="required">*</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Digite seu nome completo"
+                className="form_input"
+                required
+                minLength={3}
+              />
+            </div>
+            <div className="form_field">
+              <label htmlFor="phone">
+                Telefone <span className="required">*</span>
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="(00) 00000-0000"
+                className="form_input"
+                required
+                pattern="^\(\d{2}\) \d{5}-\d{4}$"
+                title="Digite o telefone no formato (00) 00000-0000"
+              />
+            </div>
+            <div className="form_field">
+              <label htmlFor="interest">
+                Área de Interesse <span className="required">*</span>
+              </label>
+              <select id="interest" className="form_input" required>
+                <option value="">Selecione a rua de interesse</option>
+                <option value="Rua das Palmeiras">Rua das Palmeiras</option>
+                <option value="Rua dos Ipês">Rua dos Ipês</option>
+                <option value="Rua das Aroeiras">Rua das Aroeiras</option>
+              </select>
+            </div>
+          </div>
+          <button
+            className="form_submit"
+            onClick={() => {
+              const nameInput = document.getElementById(
+                "name"
+              ) as HTMLInputElement;
+              const phoneInput = document.getElementById(
+                "phone"
+              ) as HTMLInputElement;
+              const interestInput = document.getElementById(
+                "interest"
+              ) as HTMLSelectElement;
+
+              // Dispara a validação nativa do HTML5
+              if (!nameInput.checkValidity()) {
+                nameInput.reportValidity();
+                return;
+              }
+              if (!phoneInput.checkValidity()) {
+                phoneInput.reportValidity();
+                return;
+              }
+              if (!interestInput.checkValidity()) {
+                interestInput.reportValidity();
+                return;
+              }
+
+              const name = nameInput.value;
+              const phone = phoneInput.value;
+              const interest = interestInput.value;
+
+              const message = `Olá! Me chamo ${name}. Gostaria de mais informações sobre os terrenos na ${interest}. Meu telefone para contato é ${phone}.`;
+              const whatsappUrl = `https://wa.me/5500000000000?text=${encodeURIComponent(
+                message
+              )}`;
+              window.open(whatsappUrl, "_blank");
+            }}
+          >
+            Enviar Mensagem
+          </button>
+        </div>
       </div>
       <div className="body_description"></div>
     </main>
