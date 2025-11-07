@@ -152,7 +152,7 @@ export default function Home() {
       <div id="terrenos" className="body_lote">
         <div className="rua_1">
           <img src="/rua1.webp" alt="Vista da Rua 1" className="rua_img" />
-          <h2>Rua das Palmeiras</h2>
+          <h2>Rua Da Defesa Civil</h2>
           <p>
             Lotes residenciais com excelente localização, área verde e
             infraestrutura completa.
@@ -173,7 +173,7 @@ export default function Home() {
         </div>
         <div className="rua_2">
           <img src="/rua2.webp" alt="Vista da Rua 2" className="rua_img" />
-          <h2>Rua dos Ipês</h2>
+          <h2>Rua Travessa Dom Pedro I</h2>
           <p>
             Terrenos amplos com vista privilegiada e próximos a áreas de lazer.
           </p>
@@ -193,7 +193,7 @@ export default function Home() {
         </div>
         <div className="rua_3">
           <img src="/rua3.webp" alt="Vista da Rua 3" className="rua_img" />
-          <h2>Rua das Aroeiras</h2>
+          <h2>Rua Ida Laura Graziadei</h2>
           <p>
             Lotes comerciais e residenciais em localização estratégica com ótimo
             custo-benefício.
