@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main>
       {/* Menu Flutuante */}
-      <div className={`floating-menu ${showFloatingMenu ? 'show' : ''}`}>
+      <div className={`floating-menu ${showFloatingMenu ? "show" : ""}`}>
         <button
           className="floating-menu-toggle"
           onClick={toggleMenu}
@@ -36,13 +36,15 @@ export default function Home() {
         >
           <span className="menu-icon"></span>
         </button>
-        <nav className={`floating-menu-nav ${isMenuOpen ? 'is-open' : ''}`}>
+        <nav className={`floating-menu-nav ${isMenuOpen ? "is-open" : ""}`}>
           <a
             className="nav-link"
             href="#terrenos"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById('terrenos')?.scrollIntoView({ behavior: 'smooth' });
+              document
+                .getElementById("terrenos")
+                ?.scrollIntoView({ behavior: "smooth" });
               setIsMenuOpen(false);
             }}
           >
@@ -53,7 +55,9 @@ export default function Home() {
             href="#contato"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' });
+              document
+                .getElementById("contato")
+                ?.scrollIntoView({ behavior: "smooth" });
               setIsMenuOpen(false);
             }}
           >
@@ -64,7 +68,9 @@ export default function Home() {
             href="#sobre"
             onClick={(e) => {
               e.preventDefault();
-              document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' });
+              document
+                .getElementById("sobre")
+                ?.scrollIntoView({ behavior: "smooth" });
               setIsMenuOpen(false);
             }}
           >
