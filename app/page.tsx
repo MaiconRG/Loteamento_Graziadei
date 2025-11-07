@@ -32,31 +32,46 @@ export default function Home() {
         >
           <a
             className="nav-link"
-            href="https://www.google.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#terrenos"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("terrenos")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setIsMenuOpen(false); // Fecha o menu mobile após clicar
+            }}
           >
             Terrenos
           </a>
           <a
             className="nav-link"
-            href="https://www.google.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contato"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("contato")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setIsMenuOpen(false); // Fecha o menu mobile após clicar
+            }}
           >
             Contato
           </a>
           <a
             className="nav-link"
-            href="https://www.google.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#sobre"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("sobre")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setIsMenuOpen(false); // Fecha o menu mobile após clicar
+            }}
           >
             Sobre
           </a>
         </nav>
       </header>
-      <div className="body_lote">
+      <div id="terrenos" className="body_lote">
         <div className="rua_1">
           <img src="/rua1.webp" alt="Vista da Rua 1" className="rua_img" />
           <h2>Rua das Palmeiras</h2>
@@ -121,7 +136,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="body_chat">
+      <div id="contato" className="body_chat">
         <div className="home_form">
           <h2 className="form_title">Solicite mais informações</h2>
           <div className="form_columns">
@@ -206,7 +221,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="body_description"></div>
+      <div id="sobre" className="body_description"></div>
     </main>
   );
 }
