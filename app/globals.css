@@ -1,17 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
 :root {
   --background: #4d8a5b;
-  --foreground: #ecf1ee;
+  --foreground: #0e361e;
   --accent: #7fd08a;
-  --muted: rgba(236, 241, 238, 0.85);
-  --max-width: 1100px;
-  --gap: 1rem;
+  --back-ffff: #f1faf3;
+  --header-height: 60px; /* altura do header usada para calcular a área do fundo */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+
+  font-family: "Poppins", Inter, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
+
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -20,25 +23,42 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.body_chat {
+  /* Fundo usando a imagem na pasta public */
+  background-image: url("/loteamento.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* pequeno overlay para legibilidade do conteúdo em cima do fundo */
+  background-color: rgba(0, 0, 0, 0.06);
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.home_form {
+  background-color: var(--back-ffff);
+  width: 25vw;
+  height: 70vh;
+  border-radius: 10px;
+  margin-right: 8vw;
+}
 /* Header */
 .site-header {
-  width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0.75rem 1rem;
+  background-color: #ecf1ee;
+  max-width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* left and right with center free */
-  gap: var(--gap);
+  justify-content: space-between;
+  padding-right: 3vw;
+  height: var(--header-height);
+  box-sizing: border-box;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+.logo {
+  padding-left: 3vw;
 }
-
 .site-logo {
   width: 200px;
   height: auto;
@@ -57,86 +77,20 @@ body {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 0.75rem; /* spacing between buttons */
 }
 
 .nav-link {
   display: inline-block;
   padding: 0.45rem 0.9rem;
   background: transparent;
-  color: var(--muted);
-  border-radius: 999px;
+  color: var(--accent);
   text-decoration: none;
-  font-weight: 600;
-  transition: background 160ms ease, color 160ms ease;
+  font-weight: 700; /* deixar a fonte grossa na navegação */
+  letter-spacing: 0.55px;
+  border-radius: 9999px;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  background: rgba(255, 255, 255, 0.06);
   color: var(--foreground);
-  outline: none;
-}
-
-/* Main hero centered vertically */
-.hero {
-  display: flex;
-  flex: 1 1 auto; /* allow to grow to fill remaining height */
-  align-items: center;
-  width: 100%;
-}
-
-.hero-content {
-  text-align: center;
-  max-width: var(--max-width);
-  padding: 2rem 1rem;
-}
-
-.hero-content h2 {
-  font-size: 2rem;
-  margin: 0 0 0.5rem 0;
-}
-
-.hero-content p {
-  margin: 0 0 1.5rem 0;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
-
-.hero-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
-}
-
-/* Responsive tweaks */
-@media (max-width: 700px) {
-  .site-header {
-    padding: 0.5rem 0.75rem;
-  }
-  .site-logo {
-    width: 48px;
-    height: 48px;
-  }
-  .site-title {
-    font-size: 1rem;
-  }
-  .nav-link {
-    padding: 0.35rem 0.6rem;
-    font-size: 0.95rem;
-  }
-  .hero-content h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 420px) {
-  .header-right {
-    gap: 0.5rem;
-  }
-  .nav-link {
-    padding: 0.3rem 0.5rem;
-    font-size: 0.9rem;
-  }
 }
