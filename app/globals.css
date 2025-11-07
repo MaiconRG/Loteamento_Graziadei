@@ -5,7 +5,7 @@
   --foreground: #0e361e;
   --accent: #7fd08a;
   --back-ffff: #f1faf3;
-  --header-height: 60px; /* altura do header usada para calcular a área do fundo */
+  --header-height: 70px; /* altura do header usada para calcular a área do fundo */
 }
 
 body {
@@ -58,9 +58,10 @@ body {
 
 .logo {
   padding-left: 3vw;
+  display: flex;
 }
 .site-logo {
-  width: 200px;
+  width: 130px;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
