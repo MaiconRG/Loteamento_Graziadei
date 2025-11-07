@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import "../app/globals.css";
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHeaderMenuOpen, setIsHeaderMenuOpen] = useState(false);
+  const [isFloatingMenuOpen, setIsFloatingMenuOpen] = useState(false);
   const [showFloatingMenu, setShowFloatingMenu] = useState(false);
 
   useEffect(() => {
@@ -20,8 +21,16 @@ export default function Home() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const toggleHeaderMenu = () => {
+    setIsHeaderMenuOpen(!isHeaderMenuOpen);
+    // Garante que o menu flutuante está fechado quando abrir o menu do header
+    setIsFloatingMenuOpen(false);
+  };
+
+  const toggleFloatingMenu = () => {
+    setIsFloatingMenuOpen(!isFloatingMenuOpen);
+    // Garante que o menu do header está fechado quando abrir o menu flutuante
+    setIsHeaderMenuOpen(false);
   };
 
   return (
@@ -30,13 +39,15 @@ export default function Home() {
       <div className={`floating-menu ${showFloatingMenu ? "show" : ""}`}>
         <button
           className="floating-menu-toggle"
-          onClick={toggleMenu}
-          aria-expanded={isMenuOpen}
+          onClick={toggleFloatingMenu}
+          aria-expanded={isFloatingMenuOpen}
           aria-label="Menu flutuante"
         >
           <span className="menu-icon"></span>
         </button>
-        <nav className={`floating-menu-nav ${isMenuOpen ? "is-open" : ""}`}>
+        <nav
+          className={`floating-menu-nav ${isFloatingMenuOpen ? "is-open" : ""}`}
+        >
           <a
             className="nav-link"
             href="#terrenos"
@@ -45,7 +56,7 @@ export default function Home() {
               document
                 .getElementById("terrenos")
                 ?.scrollIntoView({ behavior: "smooth" });
-              setIsMenuOpen(false);
+              setIsFloatingMenuOpen(false);
             }}
           >
             Terrenos
@@ -58,7 +69,7 @@ export default function Home() {
               document
                 .getElementById("contato")
                 ?.scrollIntoView({ behavior: "smooth" });
-              setIsMenuOpen(false);
+              setIsFloatingMenuOpen(false);
             }}
           >
             Contato
@@ -71,7 +82,7 @@ export default function Home() {
               document
                 .getElementById("sobre")
                 ?.scrollIntoView({ behavior: "smooth" });
-              setIsMenuOpen(false);
+              setIsFloatingMenuOpen(false);
             }}
           >
             Sobre
@@ -86,15 +97,15 @@ export default function Home() {
 
         <button
           className="menu-toggle"
-          onClick={toggleMenu}
-          aria-expanded={isMenuOpen}
+          onClick={toggleHeaderMenu}
+          aria-expanded={isHeaderMenuOpen}
           aria-label="Menu principal"
         >
           <span className="menu-icon"></span>
         </button>
 
         <nav
-          className={`header-right ${isMenuOpen ? "is-open" : ""}`}
+          className={`header-right ${isHeaderMenuOpen ? "is-open" : ""}`}
           aria-label="Menu principal"
         >
           <a
@@ -105,7 +116,7 @@ export default function Home() {
               document
                 .getElementById("terrenos")
                 ?.scrollIntoView({ behavior: "smooth" });
-              setIsMenuOpen(false); // Fecha o menu mobile após clicar
+              setIsHeaderMenuOpen(false); // Fecha o menu mobile após clicar
             }}
           >
             Terrenos
@@ -118,7 +129,7 @@ export default function Home() {
               document
                 .getElementById("contato")
                 ?.scrollIntoView({ behavior: "smooth" });
-              setIsMenuOpen(false); // Fecha o menu mobile após clicar
+              setIsHeaderMenuOpen(false); // Fecha o menu mobile após clicar
             }}
           >
             Contato
@@ -131,7 +142,7 @@ export default function Home() {
               document
                 .getElementById("sobre")
                 ?.scrollIntoView({ behavior: "smooth" });
-              setIsMenuOpen(false); // Fecha o menu mobile após clicar
+              setIsHeaderMenuOpen(false); // Fecha o menu mobile após clicar
             }}
           >
             Sobre

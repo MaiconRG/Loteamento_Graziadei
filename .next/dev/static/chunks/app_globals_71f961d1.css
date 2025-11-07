@@ -381,6 +381,7 @@ body {
   }
 
   .rua_1, .rua_2, .rua_3 {
+    flex: 450px;
     width: clamp(280px, 25vw, 400px);
     height: clamp(450px, 60vh, 600px);
     margin: 0;
@@ -431,7 +432,10 @@ body {
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
+  flex-direction: column;
+  align-items: flex-end;
   transition: all .3s ease-in-out;
+  display: flex;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
@@ -508,8 +512,10 @@ body {
   background-color: #fff;
   border-radius: 12px;
   flex-direction: column;
-  gap: .5rem;
-  padding: .5rem;
+  align-items: center;
+  gap: .8rem;
+  min-width: 200px;
+  padding: 1rem;
   transition: all .3s;
   display: flex;
   position: absolute;

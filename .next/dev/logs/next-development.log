@@ -519,3 +519,33 @@ Import traces:
 [02:02:58.703] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [02:03:02.224] Server  LOG      ✓ Compiled in 14ms
 [02:07:13.786] Server  LOG      ✓ Compiled in 21ms
+[02:09:31.560] Server  LOG      ✓ Compiled in 33ms
+[02:09:31.867] Browser ERROR   uncaughtError: ReferenceError: toggleMenu is not defined
+[02:09:34.903] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:09:34.914] Server  LOG      ✓ Compiled in 27ms
+[02:09:35.656] Server  ERROR    ⨯ ReferenceError: toggleMenu is not defined
+[02:09:35.703] Browser ERROR   uncaughtError: ReferenceError: toggleMenu is not defined
+[02:09:37.888] Browser ERROR   uncaughtError: ReferenceError: toggleMenu is not defined
+[02:10:13.238] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:10:13.245] Server  LOG      ✓ Compiled in 38ms
+[02:10:13.678] Server  ERROR    ⨯ ReferenceError: toggleMenu is not defined
+[02:10:15.334] Browser ERROR   uncaughtError: ReferenceError: toggleMenu is not defined
+[02:10:17.039] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:10:17.039] Server  LOG      ✓ Compiled in 46ms
+[02:10:17.593] Server  ERROR    ⨯ ReferenceError: toggleMenu is not defined
+[02:10:19.442] Browser ERROR   uncaughtError: ReferenceError: toggleMenu is not defined
+[02:10:24.772] Server  LOG      ✓ Compiled in 33ms
+[02:10:24.773] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:10:25.200] Server  ERROR    ⨯ ReferenceError: toggleMenu is not defined
+[02:10:27.226] Browser ERROR   uncaughtError: ReferenceError: toggleMenu is not defined
+[02:10:37.059] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:10:37.063] Server  LOG      ✓ Compiled in 42ms
+[02:10:48.799] Server  LOG      ✓ Compiled in 22ms
+[02:10:58.091] Server  LOG      ✓ Compiled in 23ms
+[02:12:40.053] Server  LOG      ✓ Compiled in 35ms
+[02:12:49.711] Server  LOG      ✓ Compiled in 19ms
+[02:13:01.577] Server  LOG      ✓ Compiled in 20ms
+[02:14:01.712] Server  LOG      ✓ Compiled in 11ms
+[02:15:24.209] Server  LOG      ✓ Compiled in 15ms
+[02:15:34.293] Server  LOG      ✓ Compiled in 25ms
+[02:15:46.734] Server  LOG      ✓ Compiled in 19ms

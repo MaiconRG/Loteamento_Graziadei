@@ -420,6 +420,7 @@ body {
     width: clamp(280px, 25vw, 400px);
     height: clamp(450px, 60vh, 600px);
     margin: 0;
+    flex: 450px;
   }
 
   /* Mostrar botão do menu */
@@ -475,8 +476,11 @@ body {
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transform: translateY(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   transition: all 0.3s ease-in-out;
+  transform: translateY(20px);
 }
 
 .floating-menu.show {
@@ -550,11 +554,16 @@ body {
   right: 0;
   background-color: white;
   border-radius: 12px;
-  padding: 0.5rem;
+  padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.8rem;
+  min-width: 200px;
+  transform: translateX(
+    calc(50% - 28px)
+  ); /* Centraliza o menu em relação ao botão */
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
