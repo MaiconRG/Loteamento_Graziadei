@@ -5,7 +5,7 @@
   --foreground: #0e361e;
   --accent: #7fd08a;
   --back-ffff: #f1faf3;
-  --header-height: 70px;
+  --header-height: 80px;
 }
 
 body {
@@ -24,17 +24,81 @@ body {
 .body_lote {
   min-height: calc(100vh - var(--header-height));
   background-color: #0000000f;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  gap: 2rem;
+  padding: 2rem;
   display: flex;
 }
 
 .rua_1, .rua_2, .rua_3 {
   background-color: var(--back-ffff);
   border-radius: 10px;
-  width: 25vw;
-  height: 70vh;
-  margin: 3vw;
+  flex-direction: column;
+  flex: 350px;
+  align-items: center;
+  gap: 1rem;
+  width: clamp(280px, 25vw, 400px);
+  height: clamp(450px, 60vh, 600px);
+  margin: 0;
+  padding: 1rem;
+  transition: all .3s;
+  display: flex;
+  overflow: hidden;
+}
+
+.rua_img {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: 60%;
+  transition: transform .3s;
+}
+
+.rua_img:hover {
+  transform: scale(1.02);
+}
+
+.rua_1 h2, .rua_2 h2, .rua_3 h2 {
+  color: var(--foreground);
+  text-align: center;
+  margin: .5rem 0;
+  font-size: 1.5rem;
+}
+
+.rua_1 p, .rua_2 p, .rua_3 p {
+  color: var(--foreground);
+  text-align: center;
+  margin: 0;
+  padding: 0 1rem;
+  font-size: .9rem;
+  line-height: 1.4;
+}
+
+.whats_button {
+  color: #fff;
+  background-color: #25d366;
+  border-radius: 999px;
+  align-items: center;
+  gap: .5rem;
+  margin-top: auto;
+  padding: .6rem 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+}
+
+.whats_button:hover {
+  background-color: #128c7e;
+  transform: translateY(-2px);
+}
+
+.whats_icon {
+  filter: brightness(0) invert();
+  width: 20px;
+  height: 20px;
 }
 
 .body_chat {
@@ -53,9 +117,10 @@ body {
 .home_form {
   background-color: var(--back-ffff);
   border-radius: 10px;
-  width: 25vw;
-  height: 70vh;
-  margin-right: 8vw;
+  width: clamp(280px, 25vw, 400px);
+  height: clamp(400px, 60vh, 600px);
+  margin-right: max(1rem, 5vw);
+  transition: all .3s;
 }
 
 .body_description {
@@ -169,12 +234,13 @@ body {
   transform: rotate(-45deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 995px) {
   :root {
     --header-height: 72px;
   }
 
   .site-header {
+    height: 90px;
     padding: .5rem 1rem;
   }
 
@@ -194,6 +260,16 @@ body {
   .header-right {
     gap: .5rem;
   }
+
+  .body_chat {
+    align-items: center;
+  }
+
+  .home_form {
+    width: 40vw;
+    height: 70vh;
+    margin: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -202,7 +278,7 @@ body {
   }
 
   .site-header {
-    height: var(--header-height);
+    height: 80px;
     padding: .5rem;
     position: relative;
   }
@@ -233,8 +309,8 @@ body {
   }
 
   .rua_1, .rua_2, .rua_3 {
-    width: 85vw;
-    height: 28vh;
+    width: clamp(280px, 25vw, 400px);
+    height: clamp(450px, 60vh, 600px);
     margin: 0;
   }
 
