@@ -158,7 +158,7 @@ export default function Home() {
             infraestrutura completa.
           </p>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5555997351751"
             className="whats_button"
             target="_blank"
             rel="noopener noreferrer"
@@ -178,7 +178,7 @@ export default function Home() {
             Terrenos amplos com vista privilegiada e próximos a áreas de lazer.
           </p>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5555997351751"
             className="whats_button"
             target="_blank"
             rel="noopener noreferrer"
@@ -199,7 +199,7 @@ export default function Home() {
             custo-benefício.
           </p>
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5555997351751"
             className="whats_button"
             target="_blank"
             rel="noopener noreferrer"
@@ -289,7 +289,7 @@ export default function Home() {
               const interest = interestInput.value;
 
               const message = `Olá! Me chamo ${name}. Gostaria de mais informações sobre os terrenos na ${interest}. Meu telefone para contato é ${phone}.`;
-              const whatsappUrl = `https://wa.me/5500000000000?text=${encodeURIComponent(
+              const whatsappUrl = `https://wa.me/5555997351751?text=${encodeURIComponent(
                 message
               )}`;
               window.open(whatsappUrl, "_blank");
