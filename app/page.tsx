@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import "../app/globals.css";
 
 export default function Home() {
   const [isHeaderMenuOpen, setIsHeaderMenuOpen] = useState(false);
@@ -20,15 +19,6 @@ export default function Home() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Adiciona favicon ao head
-    const link = document.createElement("link");
-    link.rel = "icon";
-    link.href = "/ico.svg";
-    document.head.appendChild(link);
-
-    // Adiciona title ao head
-    document.title = "Loteamento Graziadei";
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -45,10 +35,9 @@ export default function Home() {
   };
 
   return (
-    <html>
-      <body>
-        {/* Menu Flutuante */}
-        <div className={`floating-menu ${showFloatingMenu ? "show" : ""}`}>
+    <>
+      {/* Menu Flutuante */}
+      <div className={`floating-menu ${showFloatingMenu ? "show" : ""}`}>
           <button
             className="floating-menu-toggle"
             onClick={toggleFloatingMenu}
@@ -315,7 +304,7 @@ export default function Home() {
           </div>
         </div>
         <div id="sobre" className="body_description"></div>
-      </body>
-    </html>
-  );
-}
+      </>
+    );
+  }
+
