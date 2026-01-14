@@ -1,2 +1,9 @@
-[00:00:01.130] Server  LOG     ✓ Ready in 816ms
-[00:00:06.213] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.123] Server  LOG     ✓ Ready in 812ms
+[00:00:05.637] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:06.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:23.260] Server  LOG     ✓ Compiled in 25ms
+[00:02:40.694] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:18.753] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:35.052] Server  LOG     ✓ Compiled in 39ms
+[00:07:39.011] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:35.627] Server  LOG     ✓ Compiled in 36ms

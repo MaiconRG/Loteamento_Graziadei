@@ -8,7 +8,7 @@
   --header-height: 80px;
 }
 
-body {
+main {
   background: var(--background);
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
