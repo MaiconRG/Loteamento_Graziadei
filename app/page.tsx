@@ -36,7 +36,7 @@ export default function Home() {
     setIsHeaderMenuOpen(false);
   };
 
-  const handlePhoneChange = (event) => {
+  const handlePhoneChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     let input = event.target.value;
 
     // Remove tudo que não é número
