@@ -1,37 +1,8 @@
-[00:00:01.305] Server  LOG     ✓ Ready in 966ms
-[00:00:04.042] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:00:04.100] Server  ERROR   Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:00:04.657] Server  ERROR   ⨯ TypeError: Cannot read properties of null (reading 'useState')
-[00:00:05.052] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:05.436] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:00:53.798] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:53.799] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:00:53.800] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:00:53.821] Server  LOG     ✓ Compiled in 41ms
-[00:00:54.012] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:00:54.100] Server  ERROR   Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:00:54.727] Server  ERROR   ⨯ TypeError: Cannot read properties of null (reading 'useState')
-[00:00:55.811] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:56.487] Browser ERROR   uncaughtError: Error: Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:
-1. You might have mismatching versions of React and the renderer (such as React DOM)
-2. You might be breaking the Rules of Hooks
-3. You might have more than one copy of React in the same app
-See https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.
-[00:01:22.801] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:22.802] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
-[00:01:22.804] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:01:22.836] Server  LOG     ✓ Compiled in 36ms
-[00:01:23.158] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:01:23.834] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.355] Server  LOG     ✓ Ready in 973ms
+[00:00:03.597] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:04.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:48.110] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:01.756] Server  LOG     ✓ Compiled in 70ms
+[00:02:01.883] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? autocomplete autoComplete
+[00:02:14.034] Server  LOG     ✓ Compiled in 20ms
+[00:02:42.564] Server  LOG     ✓ Compiled in 30ms

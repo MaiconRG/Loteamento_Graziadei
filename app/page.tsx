@@ -266,7 +266,8 @@ export default function Home() {
                   required
                   value={phone} // Conecta ao estado
                   onChange={handlePhoneChange} // Chama a função de máscara
-                  maxLength="15"
+                  minLength={3}
+                  maxLength={15}
                 />
               </div>
               <div className="form_field">
