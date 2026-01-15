@@ -305,7 +305,75 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <div id="sobre" className="body_description"></div>
+        <div id="sobre" className="body_description">
+          <section className="sobre_section">
+            {/* TEXTO */}
+            <div className="sobre_texto">
+              <h2>Uma visão que constrói legado</h2>
+
+              <p>
+                Sempre acreditei que urbanizar é um ato de responsabilidade
+                histórica. O Empreendimento Graziadei nasce do compromisso com a
+                legalidade, a transparência e o respeito ao território de Porto
+                Xavier.
+              </p>
+
+              <p>
+                Mais do que implantar infraestrutura, fiz questão de entregá-la
+                de forma definitiva ao poder público, garantindo manutenção,
+                segurança e benefícios permanentes à comunidade.
+              </p>
+
+              <p className="sobre_destaque">
+                Empreendimento Graziadei — mais que um loteamento, um legado
+                para Porto Xavier.
+              </p>
+            </div>
+
+            {/* MAPA */}
+            <div className="sobre_mapa">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.381672248459!2d-55.1453315!3d-27.9073477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f8b900447d8695%3A0x641640422896fbf8!2sLoteamento%20Graziadei!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </section>
+        </div>
+        <footer className="site-footer">
+          <div className="footer-content">
+            <p className="footer-title">
+              Empreendimento Graziadei — Porto Xavier / RS
+            </p>
+
+            <p className="footer-atendimento">
+              Atendimento exclusivo em Porto Xavier. Pessoas de cidades vizinhas
+              também podem adquirir terrenos no empreendimento.
+            </p>
+
+            <p className="footer-regioes">
+              Região de interesse: Porto Xavier • Porto Lucena • Roque Gonzales
+              • São Nicolau • Santo Cristo • Região das Missões
+            </p>
+
+            <p className="footer-direitos">
+              © {new Date().getFullYear()} Empreendimento Graziadei. Todos os
+              direitos reservados.
+            </p>
+
+            <p className="footer-dev">
+              Desenvolvimento web por{" "}
+              <a
+                href="https://portfoliomaicongretschmann.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Maicon Gretschmann — Desenvolvedor Front-end
+              </a>
+            </p>
+          </div>
+        </footer>
       </main>
     </>
   );
