@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  const [phone, setPhone] = useState("");
   const [isHeaderMenuOpen, setIsHeaderMenuOpen] = useState(false);
   const [isFloatingMenuOpen, setIsFloatingMenuOpen] = useState(false);
   const [showFloatingMenu, setShowFloatingMenu] = useState(false);
@@ -33,6 +34,22 @@ export default function Home() {
     setIsFloatingMenuOpen(!isFloatingMenuOpen);
     // Garante que o menu do header está fechado quando abrir o menu flutuante
     setIsHeaderMenuOpen(false);
+  };
+
+  const handlePhoneChange = (event) => {
+    let input = event.target.value;
+
+    // Remove tudo que não é número
+    input = input.replace(/\D/g, "");
+
+    // Aplica a formatação (00) 00000-0000
+    if (input.length <= 11) {
+      input = input.replace(/^(\d{2})(\d)/g, "($1) $2");
+      input = input.replace(/(\d{5})(\d)/, "$1-$2");
+    }
+
+    // Atualiza o estado com o valor formatado
+    setPhone(input.substring(0, 15));
   };
 
   return (
@@ -247,8 +264,9 @@ export default function Home() {
                   placeholder="(00) 00000-0000"
                   className="form_input"
                   required
-                  pattern="^\(\d{2}\) \d{5}-\d{4}$"
-                  title="Digite o telefone no formato (00) 00000-0000"
+                  value={phone} // Conecta ao estado
+                  onChange={handlePhoneChange} // Chama a função de máscara
+                  maxLength="15"
                 />
               </div>
               <div className="form_field">
