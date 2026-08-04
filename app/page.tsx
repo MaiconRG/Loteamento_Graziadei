@@ -276,10 +276,15 @@ export default function Home() {
                 </label>
                 <select id="interest" className="form_input" required>
                   <option value="">Selecione a rua de interesse</option>
-                  <option value="Rua Da Defesa Civil">Rua das Palmeiras</option>
-                  <option value="Rua Travessa Dom Pedro I">Rua dos Ipês</option>
+                  <option value="Rua Da Defesa Civil">
+                    Rua Da Defesa Civil
+                  </option>
+                  <option value="Rua Travessa Dom Pedro I">
+                    Rua Travessa Dom Pedro Is
+                  </option>
                   <option value="Rua Ida Laura Graziadei">
-                    Rua das Aroeiras
+                    {" "}
+                    Rua Ida Laura Graziadei{" "}
                   </option>
                 </select>
               </div>
