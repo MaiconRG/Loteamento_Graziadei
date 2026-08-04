@@ -276,9 +276,11 @@ export default function Home() {
                 </label>
                 <select id="interest" className="form_input" required>
                   <option value="">Selecione a rua de interesse</option>
-                  <option value="Rua das Palmeiras">Rua das Palmeiras</option>
-                  <option value="Rua dos Ipês">Rua dos Ipês</option>
-                  <option value="Rua das Aroeiras">Rua das Aroeiras</option>
+                  <option value="Rua Da Defesa Civil">Rua das Palmeiras</option>
+                  <option value="Rua Travessa Dom Pedro I">Rua dos Ipês</option>
+                  <option value="Rua Ida Laura Graziadei">
+                    Rua das Aroeiras
+                  </option>
                 </select>
               </div>
             </div>
@@ -286,13 +288,13 @@ export default function Home() {
               className="form_submit"
               onClick={() => {
                 const nameInput = document.getElementById(
-                  "name"
+                  "name",
                 ) as HTMLInputElement;
                 const phoneInput = document.getElementById(
-                  "phone"
+                  "phone",
                 ) as HTMLInputElement;
                 const interestInput = document.getElementById(
-                  "interest"
+                  "interest",
                 ) as HTMLSelectElement;
 
                 // Dispara a validação nativa do HTML5
@@ -315,7 +317,7 @@ export default function Home() {
 
                 const message = `Olá! Me chamo ${name}. Gostaria de mais informações sobre os terrenos na ${interest}. Meu telefone para contato é ${phone}.`;
                 const whatsappUrl = `https://wa.me/5555997351751?text=${encodeURIComponent(
-                  message
+                  message,
                 )}`;
                 window.open(whatsappUrl, "_blank");
               }}
