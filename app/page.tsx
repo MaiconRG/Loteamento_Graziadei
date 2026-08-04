@@ -280,7 +280,7 @@ export default function Home() {
                     Rua Da Defesa Civil
                   </option>
                   <option value="Rua Travessa Dom Pedro I">
-                    Rua Travessa Dom Pedro Is
+                    Rua Travessa Dom Pedro I
                   </option>
                   <option value="Rua Ida Laura Graziadei">
                     {" "}
