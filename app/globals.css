@@ -644,6 +644,7 @@ main {
 }
 
 .sobre_destaque {
+  padding-right: 10vh;
   margin-top: 24px;
   font-weight: 600;
   opacity: 0.9;
@@ -651,9 +652,8 @@ main {
 }
 
 .sobre_mapa iframe {
-  padding-left: 10vh;
-  width: 80%;
-  height: 325px;
+  width: 90%;
+  height: 360px;
   border: 0;
   border-radius: 12px;
 }
