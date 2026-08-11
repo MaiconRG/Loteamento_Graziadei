@@ -3,6 +3,9 @@
 :root {
   --background: #4d8a5b;
   --foreground: #0e361e;
+  --text-p: #f3f4f6;
+  --footer-text: #d1d5db;
+  --credits-dev: #3b82f6;
   --accent: #7fd08a;
   --back-ffff: #f1faf3;
   --header-height: 80px; /* altura do header usada para calcular a área do fundo */
@@ -218,6 +221,7 @@ main {
 }
 
 .body_description {
+  color: var(--text-p);
   background-color: rgba(0, 0, 0, 0.06);
   padding: 80px 20px;
 }
