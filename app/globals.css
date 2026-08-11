@@ -631,6 +631,10 @@ main {
   align-items: center;
 }
 
+.sobre_texto {
+  padding-right: 10vh;
+}
+
 .sobre_texto h2 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -644,7 +648,6 @@ main {
 }
 
 .sobre_destaque {
-  padding-right: 10vh;
   margin-top: 24px;
   font-weight: 600;
   opacity: 0.9;
