@@ -358,12 +358,14 @@ main {
 }
 
 .footer-content p {
+  color: var(--footer-text);
   margin-bottom: 10px;
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
 .footer-dev a {
+  color: var(--credits-dev);
   font-weight: 600;
   text-decoration: none;
 }
