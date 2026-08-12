@@ -1,8 +1,9 @@
-[00:00:01.355] Server  LOG     ✓ Ready in 973ms
-[00:00:03.597] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:00:04.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:48.110] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:01.756] Server  LOG     ✓ Compiled in 70ms
-[00:02:01.883] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? autocomplete autoComplete
-[00:02:14.034] Server  LOG     ✓ Compiled in 20ms
-[00:02:42.564] Server  LOG     ✓ Compiled in 30ms
+[00:00:01.332] Server  LOG     ✓ Ready in 986ms
+[00:00:08.174] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:00:08.928] Server  WARN    ⚠ Cross origin request detected from 192.168.1.9 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:08.993] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:07.490] Server  LOG     ✓ Compiled in 9ms
+[00:02:26.113] Server  LOG     ✓ Compiled in 16ms
+[00:04:49.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:27.620] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

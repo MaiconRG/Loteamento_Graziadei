@@ -1,11 +1,34 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap";
 /* [project]/app/globals.css [app-client] (css) */
 :root {
-  --background: #4d8a5b;
+  --background: #4c7456;
   --foreground: #0e361e;
+  --text-p: #f3f4f6;
+  --footer-text: #d1d5db;
+  --credits-dev: #3b82f6;
   --accent: #7fd08a;
   --back-ffff: #f1faf3;
   --header-height: 80px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 main {
@@ -103,7 +126,7 @@ main {
 
 .body_chat {
   background-color: #0000000f;
-  background-image: url("/loteamento.webp");
+  background-image: url("/loteamento.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -196,6 +219,7 @@ main {
 }
 
 .body_description {
+  color: var(--text-p);
   background-color: #0000000f;
   padding: 80px 20px;
 }
@@ -308,17 +332,19 @@ main {
 
 .site-footer {
   text-align: center;
-  background-color: #0e0b16;
+  background-color: #13111c;
   padding: 40px 20px;
 }
 
 .footer-content p {
+  color: var(--footer-text);
   margin-bottom: 10px;
   font-size: .9rem;
   line-height: 1.5;
 }
 
 .footer-dev a {
+  color: var(--credits-dev);
   font-weight: 600;
   text-decoration: none;
 }
@@ -572,6 +598,10 @@ main {
   display: grid;
 }
 
+.sobre_texto {
+  padding-right: 10vh;
+}
+
 .sobre_texto h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -594,8 +624,8 @@ main {
 .sobre_mapa iframe {
   border: 0;
   border-radius: 12px;
-  width: 100%;
-  height: 380px;
+  width: 90%;
+  height: 360px;
 }
 
 .map_section {
