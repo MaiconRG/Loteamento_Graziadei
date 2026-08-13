@@ -1,9 +1,80 @@
-[00:00:01.332] Server  LOG     ✓ Ready in 986ms
-[00:00:08.174] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
-[00:00:08.928] Server  WARN    ⚠ Cross origin request detected from 192.168.1.9 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:08.993] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:07.490] Server  LOG     ✓ Compiled in 9ms
-[00:02:26.113] Server  LOG     ✓ Compiled in 16ms
-[00:04:49.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:15:27.620] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.973] Server  LOG     ✓ Ready in 1518ms
+[00:05:27.568] Server  WARN    ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3001". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+[00:05:28.558] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:13.267] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:26.448] Server  LOG     ✓ Compiled in 27ms
+[00:08:19.925] Server  LOG     ✓ Compiled in 28ms
+[00:11:45.951] Server  LOG     ✓ Compiled in 40ms
+[00:46:52.532] Server  LOG     ✓ Compiled in 72ms
+[00:46:59.153] Server  LOG     ✓ Compiled in 35ms
+[00:11:52.624] Server  LOG     ✓ Compiled in 36ms
+[00:58:02.016] Server  LOG     ✓ Compiled in 17ms
+[01:00:35.518] Server  LOG     ✓ Compiled in 46ms
+[01:00:41.240] Server  LOG     ✓ Compiled in 19ms
+[01:06:07.472] Server  LOG     ✓ Compiled in 25ms
+[01:06:12.082] Server  LOG     ✓ Compiled in 16ms
+[01:11:09.815] Server  LOG     ✓ Compiled in 17ms
+[01:11:38.743] Server  LOG     ✓ Compiled in 16ms
+[01:12:38.925] Server  LOG     ✓ Compiled in 10ms
+[01:13:06.911] Server  LOG     ✓ Compiled in 10ms
+[01:13:57.864] Server  LOG     ✓ Compiled in 16ms
+[01:14:22.596] Server  LOG     ✓ Compiled in 12ms
+[01:14:45.693] Server  LOG     ✓ Compiled in 17ms
+[01:14:50.701] Server  LOG     ✓ Compiled in 18ms
+[01:15:10.323] Server  LOG     ✓ Compiled in 8ms
+[01:15:14.296] Server  LOG     ✓ Compiled in 14ms
+[01:17:44.122] Server  LOG     ✓ Compiled in 36ms
+[01:18:02.181] Server  LOG     ✓ Compiled in 10ms
+[01:18:37.060] Server  LOG     ✓ Compiled in 12ms
+[01:21:35.780] Server  LOG     ✓ Compiled in 16ms
+[01:23:29.654] Server  LOG     ✓ Compiled in 10ms
+[01:23:32.717] Server  LOG     ✓ Compiled in 14ms
+[01:23:37.798] Server  LOG     ✓ Compiled in 14ms
+[01:23:55.849] Server  LOG     ✓ Compiled in 9ms
+[01:24:21.176] Server  LOG     ✓ Compiled in 22ms
+[01:27:18.231] Server  LOG     ✓ Compiled in 16ms
+[01:27:23.879] Server  LOG     ✓ Compiled in 14ms
+[01:27:27.546] Server  LOG     ✓ Compiled in 19ms
+[01:27:34.633] Server  LOG     ✓ Compiled in 18ms
+[01:27:49.743] Server  LOG     ✓ Compiled in 13ms
+[01:27:55.776] Server  LOG     ✓ Compiled in 12ms
+[01:28:20.064] Server  LOG     ✓ Compiled in 17ms
+[01:28:27.267] Server  LOG     ✓ Compiled in 20ms
+[01:28:36.776] Server  LOG     ✓ Compiled in 12ms
+[01:29:18.713] Server  LOG     ✓ Compiled in 15ms
+[01:29:25.443] Server  LOG     ✓ Compiled in 11ms
+[01:29:49.275] Server  LOG     ✓ Compiled in 7ms
+[01:29:54.767] Server  LOG     ✓ Compiled in 9ms
+[01:29:59.805] Server  LOG     ✓ Compiled in 11ms
+[01:30:06.194] Server  LOG     ✓ Compiled in 10ms
+[01:30:14.292] Server  LOG     ✓ Compiled in 17ms
+[01:30:17.728] Server  LOG     ✓ Compiled in 10ms
+[01:33:33.110] Server  LOG     ✓ Compiled in 11ms
+[01:33:41.229] Server  LOG     ✓ Compiled in 13ms
+[01:34:53.849] Server  LOG     ✓ Compiled in 24ms
+[01:34:58.354] Server  LOG     ✓ Compiled in 6ms
+[01:36:41.377] Server  LOG     ✓ Compiled in 21ms
+[01:36:55.674] Server  LOG     ✓ Compiled in 13ms
+[01:37:21.290] Server  LOG     ✓ Compiled in 9ms
+[01:37:53.546] Server  LOG     ✓ Compiled in 10ms
+[01:37:59.530] Server  LOG     ✓ Compiled in 8ms
+[01:38:02.449] Server  LOG     ✓ Compiled in 10ms
+[01:38:05.881] Server  LOG     ✓ Compiled in 16ms
+[01:38:31.251] Server  LOG     ✓ Compiled in 8ms
+[01:40:01.556] Server  LOG     ✓ Compiled in 16ms
+[01:42:45.174] Server  LOG     ✓ Compiled in 23ms
+[01:43:56.939] Server  LOG     ✓ Compiled in 17ms
+[01:45:47.527] Server  LOG     ✓ Compiled in 24ms
+[01:46:06.805] Server  LOG     ✓ Compiled in 10ms
+[01:55:03.320] Server  LOG     ✓ Compiled in 112ms
+[01:58:50.197] Server  LOG     ✓ Compiled in 41ms
+[01:59:20.600] Server  LOG     ✓ Compiled in 24ms
+[02:07:34.356] Server  LOG     ✓ Compiled in 24ms
+[02:07:37.296] Server  LOG     ✓ Compiled in 8ms
+[02:07:41.425] Server  LOG     ✓ Compiled in 12ms
+[02:07:50.867] Server  LOG     ✓ Compiled in 12ms
+[02:07:55.744] Server  LOG     ✓ Compiled in 10ms
+[02:08:02.486] Server  LOG     ✓ Compiled in 15ms
+[02:08:07.082] Server  LOG     ✓ Compiled in 8ms
+[02:08:10.002] Server  LOG     ✓ Compiled in 8ms
+[02:13:55.149] Server  LOG     ✓ Compiled in 30ms

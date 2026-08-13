@@ -190,7 +190,7 @@ export default function Home() {
                 alt="WhatsApp"
                 className="whats_icon"
               />
-              Mais detalhes
+              Falar com Corretor
             </a>
           </div>
           <div className="rua_2">
@@ -211,7 +211,7 @@ export default function Home() {
                 alt="WhatsApp"
                 className="whats_icon"
               />
-              Mais detalhes
+              Falar com Corretor
             </a>
           </div>
           <div className="rua_3">
@@ -232,14 +232,16 @@ export default function Home() {
                 alt="WhatsApp"
                 className="whats_icon"
               />
-              Mais detalhes
+              Falar com Corretor
             </a>
           </div>
         </div>
 
         <div id="contato" className="body_chat">
           <div className="home_form">
-            <h2 className="form_title">Solicite mais informações</h2>
+            <h2 className="form_title">
+              Dê o primeiro passo para o seu novo terreno
+            </h2>
             <div className="form_columns">
               <div className="form_field">
                 <label htmlFor="name">
@@ -327,7 +329,7 @@ export default function Home() {
                 window.open(whatsappUrl, "_blank");
               }}
             >
-              Enviar Mensagem
+              Quero receber as condições
             </button>
           </div>
         </div>
@@ -335,19 +337,14 @@ export default function Home() {
           <section className="sobre_section">
             {/* TEXTO */}
             <div className="sobre_texto">
-              <h2>Uma visão que constrói legado</h2>
+              <h2>Segurança e Valorização para o seu Futuro</h2>
 
               <p>
-                Sempre acreditei que urbanizar é um ato de responsabilidade
-                histórica. O Empreendimento Graziadei nasce do compromisso com a
-                legalidade, a transparência e o respeito ao território de Porto
-                Xavier.
-              </p>
-
-              <p>
-                Mais do que implantar infraestrutura, fiz questão de entregá-la
-                de forma definitiva ao poder público, garantindo manutenção,
-                segurança e benefícios permanentes à comunidade.
+                O Empreendimento Graziadei nasceu do compromisso com a qualidade
+                e o respeito por você. Entregamos uma infraestrutura definitiva
+                e legalizada para garantir a segurança do seu patrimônio e o
+                bem-estar da sua família. Mais que um loteamento, o alicerce
+                para o seu novo projeto de vida.
               </p>
 
               <p className="sobre_destaque">
